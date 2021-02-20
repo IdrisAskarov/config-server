@@ -6,3 +6,14 @@ eureka:
       defaultZone: http://localhost:8762/eureka
   instance:
     hastname: localhost
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/microservices_full_course
+    username: postgres
+    password: postgres
+    validationQuery: SELECT 1
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
